@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.content {
+    margin: 20px;
+}
+
+.login_input{
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    padding: .5em;
+
+}
+
+form{
+    border: 3px solid #333;
+    padding: 1em;
+    margin: .7em;
+}
+
+form label,
+form input,
+form button {
+    border-radius: 5px;
+    padding: .5em;
+    margin: 1em;
+}
+
+.btn-login{
+    text-align: center;
+    display: block;
+}
+
+.reg_box{
+display: block;
+}
+.register_inputs{
+    /* background-color: aquamarine; */
+    border: 1px dashed #fede;
+    margin: .7em;
+    padding: .1em;
+}
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}

@@ -1,21 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Freaky Coding</title>
-</head>
-<body>
-    <main>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
-                <li>Blog</li>
-                <li>Login</li>
-            </ul>
-        </nav>
-    </main>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      {% block title %}
+        Freaky Coding
+      {% endblock %}
+    </title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+    <header>
+      <h1>Freaky Coding</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+          <li>
+            <a href="{% url 'login' %} ">Login</a>
+          </li>
+          <li>
+            <a href="{% url 'register' %}">Register</a>
+          </li>
+          <li>
+            <a href="#">Profile</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="content">
+      {% block content %}
+        <h3>THIS IS THE BASE TEMPLATE VIEW</h3>
+      {% endblock %}
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Freaky Coding</p>
+    </footer>
+  </body>
 </html>
